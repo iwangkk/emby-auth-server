@@ -54,8 +54,13 @@ https://blog.jiawei.xin/?p=469
 
 
 命令备注：
+```xml
  docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7  -t [name]:[tag] .
+ 
  docker tag e334cc0xxxx crpi-1hyekq4mxduihla9.cn-hangzhou.personal.cr.aliyuncs.com/wangkk/emby-auth-server:[tag]
+ 
  docker push crpi-1hyekq4mxduihla9.cn-hangzhou.personal.cr.aliyuncs.com/wangkk/emby-auth-server:[tag]
+```
+
   
 
