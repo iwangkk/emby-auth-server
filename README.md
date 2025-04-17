@@ -37,6 +37,8 @@ docker run -d -p 8081:8081 emby-auth-server:0.0.1
 
 docker pull crpi-1hyekq4mxduihla9.cn-hangzhou.personal.cr.aliyuncs.com/wangkk/emby-auth-server:latest
 
+注意：这个是arm64的;amd64自行打镜像吧！
+
 docker run -d -p 8081:8081 emby-auth-server:latest
 
 
