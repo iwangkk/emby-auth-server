@@ -35,6 +35,10 @@ docker run -d -p 8081:8081 emby-auth-server:0.0.1
 
 你也可以去直接使用我打好包的镜像直接运行即可
 
+docker pull crpi-1hyekq4mxduihla9.cn-hangzhou.personal.cr.aliyuncs.com/wangkk/emby-auth-server:latest
+
+docker run -d -p 8081:8081 emby-auth-server:latest
+
 
 
 
