@@ -1,5 +1,5 @@
 # 指定基础镜像
-FROM openjdk:8-jdk-alpine
+FROM docker.m.daocloud.io/openjdk:8-jdk-alpine
 
 # 在镜像中执行命令,创建目录，并使用它作为工作目录
 RUN mkdir -p /app
