@@ -35,7 +35,7 @@ docker run -d -p 8081:8081 emby-auth-server:0.0.1
 
 你也可以去直接使用我打好包的镜像直接运行即可
 
-docker pull crpi-1hyekq4mxduihla9.cn-hangzhou.personal.cr.aliyuncs.com/wangkk/emby-auth-server:latest
+docker pull crpi-1hyekq4mxduihla9.cn-hangzhou.personal.cr.aliyuncs.com/wangkk/emby-auth-server:amd64
 
 注意：这个是arm64的;amd64自行打镜像吧！
 
@@ -51,4 +51,11 @@ docker run -d -p 8081:8081 emby-auth-server:latest
 https://blog.peos.cn/2024/11/23/emby.html
 
 https://blog.jiawei.xin/?p=469
+
+
+命令备注：
+ docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7  -t [name]:[tag] .
+ docker tag e334cc0xxxx crpi-1hyekq4mxduihla9.cn-hangzhou.personal.cr.aliyuncs.com/wangkk/emby-auth-server:[tag]
+ docker push crpi-1hyekq4mxduihla9.cn-hangzhou.personal.cr.aliyuncs.com/wangkk/emby-auth-server:[tag]
+  
 
